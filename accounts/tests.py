@@ -33,7 +33,7 @@ class CustomUserTests(TestCase):
         self.assertTrue(admin_user.is_superuser)
 
 
-class SignupTests(SimpleTestCase):
+class SignupTests(TestCase):
     username = 'newuser'
     email = 'newuser@email.com'
 
