@@ -20,6 +20,11 @@ Run this command to install dependencies in container and run in Docker detach m
 docker-compose up -d --build
 ```
 
+Run this command to shut down container (useful for troubleshooting)
+```bash
+docker-compose down
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
