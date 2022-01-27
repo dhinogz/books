@@ -1,6 +1,6 @@
 # Books
 
-Books specializes in ordering a libraries website using Django. 
+Books specializes in managing a libraries website using Django. 
 
 ## Installation
 
