@@ -6,11 +6,11 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONBUFFERED 1
 
 # Set work directory 
-WORKDIR /projects
+WORKDIR /code/
 
 # Install dependencies
-COPY Pipfile Pipfile.lock /projects/
+COPY Pipfile Pipfile.lock /code/
 RUN pip install pipenv && pipenv install --system
 
 # Copy project
-COPY . /projects/
+COPY . /code/
