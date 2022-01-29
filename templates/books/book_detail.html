@@ -1,0 +1,24 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}{{ book.title }}{% endblock title %}
+
+{% block content %}
+    <div class="book">
+        <h2>
+            <a href="">{{ book.title }}</a>
+        </h2>
+        <p>
+            Author: {{ book.author }}
+        </p>
+        <p>
+            Price: {{ book.price }}
+        </p>
+        
+    </div>
+    <div class="back">
+        <p>
+            <a href="{% url 'book_list' %}">Back</a>
+        </p>
+    </div>
+{% endblock content %}
